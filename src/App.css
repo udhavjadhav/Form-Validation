@@ -1,0 +1,178 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+  background-color: #fff;
+  height: 75vh;
+  width: 40vw;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #710373;
+}
+
+.main {
+  width: 80%;
+}
+
+.button {
+  text-align: center;
+  width: 80%;
+}
+
+.verify{
+  transition: 0.5s;
+  background-image: linear-gradient(to right, #73C8A9 0%, #373B44 51%, #73C8A9 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.verify:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.verifyInput{
+  padding: 8px;
+}
+
+.msg{
+  color: red;
+}
+.otp{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.email {
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.pass {
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.btn {
+  background-image: linear-gradient(to right, #73C8A9 0%, #373B44 51%, #73C8A9 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width:480px) and (max-width:1080px) {
+  .App {
+    width: 90%;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .user {
+    padding: 12px;
+  }
+
+  .pass {
+    padding: 12px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .App {
+    padding: 15px;
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    gap: 10px;
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .user {
+    padding: 7px;
+  }
+
+  .pass {
+    padding: 7px;
+  }
+
+  .email {
+    padding: 7px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .error {
+    font-size: 14px;
+  }
+
+}
